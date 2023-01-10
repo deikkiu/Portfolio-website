@@ -1,2 +1,17 @@
+// libs
 @import "libs/bootstrap-reboot.min";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+// base
+@import "base/fonts";
+@import "base/general";
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// Bem blocks
+@import "../blocks/modules";
+
+// Sass blocks
+@import "blocks/title";
+@import "blocks/button";

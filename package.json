@@ -9,17 +9,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.10",
+    "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^5.1.0",
-    "gulp-htmlmin": "^5.0.1",
-    "sass": "^1.56.1",
+    "sass": "^1.57.1",
     "scss": "^0.2.4"
   },
   "browserslist": [
