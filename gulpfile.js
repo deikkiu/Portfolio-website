@@ -7,6 +7,8 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const htmlmin = require("gulp-htmlmin");
 const rigger = require("gulp-rigger");
+const concat = require("gulp-concat");
+const order = require("gulp-order");
 
 gulp.task("server", function () {
   browserSync({
@@ -50,7 +52,18 @@ gulp.task("html", function () {
 
 gulp.task("scripts", function () {
   return gulp
-    .src("src/js/**/*.js")
+    .src("src/js/**/**/*.js")
+    .pipe(
+      order([
+        "promo/**/*.js",
+        "scroll/scroll-variables.js",
+        "scroll/scroll-styles.js",
+        "scroll/scroll-elements-heigth.js",
+        "scroll/scroll-calculate-value.js",
+        "scroll/scroll.js",
+      ])
+    )
+    .pipe(concat("index.js"))
     .pipe(gulp.dest("dist/js"))
     .pipe(browserSync.stream());
 });
