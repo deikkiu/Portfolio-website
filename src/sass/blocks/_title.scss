@@ -2,7 +2,10 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
-  color: #ffffff;
+  color: #000;
+  &_white {
+    color: #ffffff;
+  }
   &_fz12 {
     font-size: 12px;
     line-height: 18px;

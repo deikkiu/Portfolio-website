@@ -1,0 +1,9 @@
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: $orange-color;
+  margin-top: 25px;
+  &_mt4 {
+    margin-top: 4px;
+  }
+}

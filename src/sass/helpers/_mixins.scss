@@ -11,3 +11,17 @@
     background: $purple-color;
   }
 }
+
+@mixin circle_orange {
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -27%;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: $orange-color;
+  }
+}
