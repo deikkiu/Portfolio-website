@@ -1,0 +1,12 @@
+.skills {
+  padding: 120px 0 0 0;
+  &__title {
+    position: relative;
+    @include circle_orange;
+    &::before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

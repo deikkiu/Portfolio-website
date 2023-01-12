@@ -10,6 +10,16 @@ const rigger = require("gulp-rigger");
 const concat = require("gulp-concat");
 const order = require("gulp-order");
 
+const jsOrderFiles = [
+  "promo/**/*.js",
+  "scroll/scroll-variables.js",
+  "scroll/scroll-styles.js",
+  "scroll/scroll-elements-heigth.js",
+  "scroll/scroll-calculate-value.js",
+  "scroll/scroll.js",
+  "skills/progress.js",
+];
+
 gulp.task("server", function () {
   browserSync({
     server: {
@@ -53,16 +63,7 @@ gulp.task("html", function () {
 gulp.task("scripts", function () {
   return gulp
     .src("src/js/**/**/*.js")
-    .pipe(
-      order([
-        "promo/**/*.js",
-        "scroll/scroll-variables.js",
-        "scroll/scroll-styles.js",
-        "scroll/scroll-elements-heigth.js",
-        "scroll/scroll-calculate-value.js",
-        "scroll/scroll.js",
-      ])
-    )
+    .pipe(order(jsOrderFiles))
     .pipe(concat("index.js"))
     .pipe(gulp.dest("dist/js"))
     .pipe(browserSync.stream());
