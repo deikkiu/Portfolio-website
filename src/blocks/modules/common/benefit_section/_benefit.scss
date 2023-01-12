@@ -1,0 +1,84 @@
+.benefit {
+  padding: 120px 0 0 0;
+  &__title {
+    text-align: center;
+    position: relative;
+    @include circle_orange;
+    &::before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 65px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 136px;
+  }
+  &__column {
+    &-title {
+      position: relative;
+      padding-left: 50px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        background-color: $orange-color;
+        border-radius: 100%;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -8px;
+          left: 7px;
+          width: 1px;
+          height: calc(100% + 8px);
+          background-color: #000;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: 7px;
+      height: 1px;
+      width: 43px;
+      background-color: #000;
+    }
+  }
+  &__head {
+    padding: 45px 0 0 106px;
+    position: relative;
+    &-icon {
+      position: absolute;
+      left: 65px;
+      top: 59px;
+      @include circle_orange;
+      &::before {
+        left: -15px;
+        top: -11px;
+      }
+    }
+  }
+  &__body {
+    padding: 0 0 0 50px;
+    margin-top: 12px;
+  }
+}
