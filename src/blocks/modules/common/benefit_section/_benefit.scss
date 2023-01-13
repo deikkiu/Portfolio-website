@@ -1,15 +1,6 @@
 .benefit {
   padding: 120px 0 0 0;
-  &__title {
-    text-align: center;
-    position: relative;
-    @include circle_orange;
-    &::before {
-      top: -5px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
+
   &__subtitle {
     text-align: center;
   }

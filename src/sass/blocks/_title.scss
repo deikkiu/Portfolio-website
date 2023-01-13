@@ -31,4 +31,14 @@
   &_fw500 {
     font-weight: 500;
   }
+  &__section-title {
+    position: relative;
+    text-align: center;
+    @include circle_orange;
+    &::before {
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
