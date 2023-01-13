@@ -1,0 +1,17 @@
+.policy {
+  padding: 40px;
+  &__content {
+    padding: 40px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 5px grey;
+  }
+  &__subtitle {
+    padding: 30px 0;
+  }
+  &__descr {
+    padding-left: 40px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
