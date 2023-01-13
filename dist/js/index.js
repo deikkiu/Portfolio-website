@@ -28,6 +28,10 @@ const linkedinFill = document.querySelector(".linkedinChangeFill");
 const instagramFill = document.querySelectorAll(".instagramChangeFill");
 const githubFill = document.querySelector(".githubFChangeFill");
 
+// Change hamburger bgcolor when scrolling
+const hamburgerSpan = document.querySelectorAll(".hamburger span");
+const hamburgerHeigth = hamburger.clientHeight;
+
 // Svg parh transition style
 githubFill.style.transition = "0.6s all";
 instagramFill.forEach((e) => (e.style.transition = "0.6s all"));
@@ -92,6 +96,11 @@ window.addEventListener("scroll", function () {
   this.scrollY > linkedinUniformValue
     ? (linkedinFill.style.fill = "#000000")
     : (linkedinFill.style.fill = "#ffffff");
+
+  // Hamburger
+  this.scrollY > promoHeigth - hamburgerHeigth
+    ? hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#000000"))
+    : hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#ffffff"));
 });
 
 // Progress block on skills section

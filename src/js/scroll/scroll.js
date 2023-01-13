@@ -25,4 +25,9 @@ window.addEventListener("scroll", function () {
   this.scrollY > linkedinUniformValue
     ? (linkedinFill.style.fill = "#000000")
     : (linkedinFill.style.fill = "#ffffff");
+
+  // Hamburger
+  this.scrollY > promoHeigth - hamburgerHeigth
+    ? hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#000000"))
+    : hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#ffffff"));
 });
