@@ -27,7 +27,7 @@ window.addEventListener("scroll", function () {
     : (linkedinFill.style.fill = "#ffffff");
 
   // Hamburger
-  this.scrollY > promoHeigth - hamburgerHeigth
+  this.scrollY > promoHeigth - hamburgerHeigth * 2
     ? hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#000000"))
     : hamburgerSpan.forEach((e) => (e.style.backgroundColor = "#ffffff"));
 });
