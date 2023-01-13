@@ -2,7 +2,7 @@
 const hamburger = document.querySelector(".hamburger");
 const closeButton = document.querySelector(".menu__close");
 const menu = document.querySelector(".menu");
-const menuLinks = document.querySelectorAll(".menu__item");
+const menuLinks = document.querySelectorAll(".menu__item a");
 const className = "active";
 
 hamburger.addEventListener("click", () => {
@@ -17,6 +17,12 @@ menuLinks.forEach((e) => {
   e.addEventListener("click", () => {
     menu.classList.remove(className);
   });
+});
+
+const overlay = document.querySelector(".menu__overlay");
+
+overlay.addEventListener("click", () => {
+  menu.classList.remove(className);
 });
 
 // Change side panel color when scrolling
