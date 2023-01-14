@@ -18,6 +18,7 @@ const jsOrderFiles = [
   "scroll/scroll-calculate-value.js",
   "scroll/scroll.js",
   "skills/progress.js",
+  "modal/modal.js",
 ];
 
 gulp.task("server", function () {
