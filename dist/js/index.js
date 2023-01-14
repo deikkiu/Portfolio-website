@@ -13,9 +13,18 @@ closeButton.addEventListener("click", () => {
   menu.classList.remove(className);
 });
 
-menuLinks.forEach((e) => {
-  e.addEventListener("click", () => {
+menuLinks.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+
     menu.classList.remove(className);
+
+    const id = el.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
 });
 
