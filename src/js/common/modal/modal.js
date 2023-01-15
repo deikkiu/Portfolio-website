@@ -5,6 +5,13 @@ const modalBack = document.querySelectorAll(".modal__back");
 const modalOverlay = document.querySelector(".modal__overlay");
 const modalList = document.querySelectorAll(".modal__body");
 
+const modalSubmitClose = document.querySelector(".modal__close");
+const modalSubmit = document.querySelector(".modal__submit");
+
+modalSubmitClose.addEventListener("click", () => {
+  modalSubmit.classList.remove(active);
+});
+
 const active = "active";
 
 link.forEach((el) => {
