@@ -1,0 +1,160 @@
+body {
+  padding: 0; /* поля вокруг содержимого элемента */
+  margin: 0; /* отступ */
+  font-family: "Anton", sans-serif;
+  color: 000;
+  font-size: 16px; /* размер шрифта */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0; /* поля вокруг содержимого элемента */
+  margin: 0; /* отступ */
+  text-transform: uppercase; /* Все символы текста становятся прописными */
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1170px; /* ширина контейнера */
+  margin: 0 auto; /* позиционирование по центру */
+}
+
+.header {
+  background: url("../img/header-bg.jpg") no-repeat center top;
+  padding-top: 57px;
+  padding-bottom: 322px;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+}
+
+.logo {
+  margin-right: 69px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li,
+a {
+  text-decoration: none; /* подчеркивание ссылки */
+  text-transform: uppercase; /* Все символы текста становятся прописными */
+  font-size: 17px;
+  letter-spacing: 0.1em; /* расстояние между буквами */
+}
+
+.menu li {
+  margin-right: 40px;
+}
+
+.tel {
+  font-size: 17px;
+  text-decoration: none; /* подчеркивание ссылки */
+  margin-left: auto;
+  letter-spacing: 0.1em; /* расстояние между буквами */
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* выравнивает флекс-элементы в перпендикулярном направлении */
+}
+
+.offer {
+  margin-top: 216px;
+  text-transform: uppercase; /* Все символы текста становятся прописными */
+}
+
+.offer p {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 0.1em; /* расстояние между буквами */
+}
+
+.offer h1 {
+  color: #fff;
+  font-size: 100px;
+  letter-spacing: 0.02em; /* расстояние между буквами */
+  margin-bottom: 19px;
+  margin-top: -40px;
+}
+
+.btn {
+  display: block;
+  font-size: 17px;
+  letter-spacing: 0.1em; /* расстояние между буквами */
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 17px 47px;
+  width: 238px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+section {
+  padding-top: 113px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-bottom: 58px;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 19px;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  text-align: justify;
+  line-height: 1.62em;
+}
+
+.desc_left {
+  width: 3476px;
+}
+
+.desc_right {
+  margin-left: 36px;
+}
+
+.gallery {
+  margin-top: 67px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 98px;
+  margin-bottom: 80px;
+}
+
+footer p {
+  font-family: Open Sans;
+  font-size: 15px;
+  text-align: center;
+}
