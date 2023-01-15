@@ -34,24 +34,27 @@
 
         <form action="#" class="contacts__form">
           <div class="contacts__input">
-            <input name="name" id="name" type="text" />
+            <input name="name" id="name" type="text" autocomplete="off" />
             <label for="name">Ваше имя</label>
           </div>
           <div class="contacts__input">
-            <input name="email" id="email" type="email" />
+            <input name="email" id="email" type="email" autocomplete="off" />
             <label for="email">Ваша почта</label>
           </div>
 
           <div class="contacts__textarea">
-            <textarea name="text" id="text"></textarea>
+            <textarea name="messages" id="text" autocomplete="off"></textarea>
             <label for="text">Ваше сообщение</label>
           </div>
           <div class="contacts__triggers">
-            <button class="button button_bgorange contacts__button">
+            <button
+              id="form-button"
+              class="button button_bgorange contacts__button"
+            >
               Отправить сообщение
             </button>
             <div class="contacts__policy">
-              <input required type="checkbox" />
+              <input id="checkbox" name="checkbox" required type="checkbox" />
               <span>
                 Я согласен(а) с
                 <a href="/policy.html" target="_blank"
@@ -65,3 +68,20 @@
     </div>
   </div>
 </section>
+
+<!-- Modal submit -->
+
+<div class="modal__submit">
+  <div class="modal__submit-block">
+    <h2 class="title modal__submit-title">Ваше сообщение было отправлено</h2>
+    <div class="title title_fz14 title_fw500 modal__submit-desctiption">
+      Спасибо вам за ваш интерес к моей работе. Я свяжусь с вами буквально через
+      несколько часов. Оставайся на связи и до скорой встречи!
+    </div>
+    <a href="javascript:;" class="button modal__submit-button modal__close"
+      >Назад в портфолио</a
+    >
+  </div>
+
+  <div class="modal__submit-overlay"></div>
+</div>

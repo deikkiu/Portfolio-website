@@ -17,6 +17,7 @@
     }
   }
   &__heading {
+    border: 1px solid $orange-color;
     &::after,
     &::before {
       content: "";
