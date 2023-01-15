@@ -62,6 +62,10 @@ gulp.task("html", function () {
     .pipe(gulp.dest("dist/"));
 });
 
+gulp.task("projects", function () {
+  return gulp.src("src/projects/**/*").pipe(gulp.dest("dist/projects"));
+});
+
 gulp.task("scripts", function () {
   return gulp
     .src("src/js/common/**/*.js")
@@ -113,6 +117,7 @@ gulp.task(
     "icons",
     "images",
     "mailer",
-    "libs"
+    "libs",
+    "projects"
   )
 );

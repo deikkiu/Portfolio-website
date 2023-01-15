@@ -1,7 +1,7 @@
 <?php
 
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$email = $_POST['email'];
 $messages = $_POST['messages'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
