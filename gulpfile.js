@@ -19,6 +19,7 @@ const jsOrderFiles = [
   "scroll/scroll.js",
   "skills/progress.js",
   "modal/modal.js",
+  "form/form.js",
 ];
 
 gulp.task("server", function () {
@@ -63,11 +64,15 @@ gulp.task("html", function () {
 
 gulp.task("scripts", function () {
   return gulp
-    .src("src/js/**/**/*.js")
+    .src("src/js/common/**/*.js")
     .pipe(order(jsOrderFiles))
     .pipe(concat("index.js"))
     .pipe(gulp.dest("dist/js"))
     .pipe(browserSync.stream());
+});
+
+gulp.task("libs", function () {
+  return gulp.src("src/js/libs/**/*.js").pipe(gulp.dest("dist/js"));
 });
 
 gulp.task("fonts", function () {
@@ -92,6 +97,10 @@ gulp.task("images", function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task("mailer", function () {
+  return gulp.src("src/mailer/**/*").pipe(gulp.dest("dist/mailer"));
+});
+
 gulp.task(
   "default",
   gulp.parallel(
@@ -102,6 +111,8 @@ gulp.task(
     "scripts",
     "fonts",
     "icons",
-    "images"
+    "images",
+    "mailer",
+    "libs"
   )
 );
