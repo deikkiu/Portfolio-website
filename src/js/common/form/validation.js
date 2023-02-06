@@ -55,7 +55,7 @@ $("form").submit(function (e) {
     data: $(this).serialize(),
   }).done(function () {
     $(this).find("input").val("");
-    $(".modal__submit").addClass(active);
+    $(".submit").addClass(active);
 
     $("form").trigger("reset");
   });

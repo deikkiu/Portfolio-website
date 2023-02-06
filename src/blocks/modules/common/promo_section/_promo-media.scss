@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+  .promo {
+    &__wrapper {
+      justify-content: start;
+      padding-left: 60px;
+    }
+  }
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .promo {
+    &__wrapper {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    &__title {
+      margin-top: 16px;
+      font-size: 42px;
+      line-height: 48px;
+    }
+  }
+  .hamburger {
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo {
+    &__title {
+      font-size: 38px;
+      line-height: 42px;
+    }
+    &__btns {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .menu {
+    &__block {
+      width: 100%;
+    }
+  }
+}

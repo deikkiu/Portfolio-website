@@ -2,7 +2,14 @@
   <div class="container">
     <div class="about__wrapper">
       <div class="about__image">
-        <img src="img/main_photo.jpg" alt="Photo" />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="img/main_photo_mobile.jpg"
+          />
+          <source media="(min-width: 769px)" srcset="img/main_photo.jpg" />
+          <img src="img/main_photo.jpg" alt="Photo" />
+        </picture>
       </div>
 
       <div class="about__info">
@@ -17,7 +24,7 @@
           результат сразу после написания кода это круто. Это показывает что я
           делаю правильно и мотивирует учиться дальше. За счет этой мотивации, я
           буду стремиться развиваться. Я командный игрок, открытый для обучения,
-          адаптации к изменениям и узнавания чего-то нового в желаемой сфере.
+          адаптации к изменениям и изучения чего-то нового в желаемой сфере.
         </p>
       </div>
 

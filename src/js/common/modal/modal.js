@@ -5,11 +5,11 @@ const modalBack = document.querySelectorAll(".modal__back");
 const modalOverlay = document.querySelector(".modal__overlay");
 const modalList = document.querySelectorAll(".modal__body");
 
-const modalSubmitClose = document.querySelector(".modal__close");
-const modalSubmit = document.querySelector(".modal__submit");
+const submitClose = document.querySelector(".submit__close");
+const submit = document.querySelector(".submit");
 
-modalSubmitClose.addEventListener("click", () => {
-  modalSubmit.classList.remove(active);
+submitClose.addEventListener("click", () => {
+  submit.classList.remove(active);
 });
 
 const active = "active";

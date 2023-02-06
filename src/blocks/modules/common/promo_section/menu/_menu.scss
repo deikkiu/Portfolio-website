@@ -16,7 +16,6 @@
   &__block {
     position: relative;
     z-index: 10;
-    padding: 180px 0 0 60px;
     width: 345px;
     height: 100vh;
     background-color: $purple-color;
@@ -27,6 +26,12 @@
     top: 24px;
     right: 26px;
     cursor: pointer;
+  }
+  &__nav {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    height: 100vh;
   }
   &__list {
     margin: 0;
@@ -55,7 +60,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 50px;
+    bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
