@@ -15,3 +15,52 @@
     margin-bottom: 20px;
   }
 }
+
+// Policy media queres
+
+@media (max-width: 768px) {
+  .policy {
+    padding: 20px;
+    &__content {
+      padding: 20px;
+    }
+    &__title {
+      line-height: 32px;
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+    &__descr {
+      font-size: 14px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .policy {
+    padding: unset;
+    &__content {
+      padding: 10px;
+    }
+    &__title {
+      line-height: 28px;
+      font-size: 22px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+    &__descr {
+      padding-left: unset;
+      font-size: 12px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
